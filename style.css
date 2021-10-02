@@ -1,0 +1,43 @@
+* {
+   box-sizing: border-box;
+}
+
+body{
+   background-color: green;
+}
+
+.container{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+   height: 100%;
+   width: 100%;
+}
+
+.houses{
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+
+}
+
+#Baratheon_Flag{
+   height:640px;
+   width: 414px;
+}
+
+#Targaryen_Flag{
+   height:640px;
+   width: 414px;
+}
+
+#top{
+   display: flex;
+   align-content: center;
+}
+
+#Banner {
+   height: 100%;
+   width: 100%;
+}
