@@ -3,7 +3,7 @@
 }
 
 body{
-   background-color: green;
+   background-color: black;
 }
 
 .container{
@@ -13,6 +13,16 @@ body{
    flex-wrap: wrap;
    height: 100%;
    width: 100%;
+}
+
+#banner{
+   width: 100vw;
+}
+
+input[type=image]{
+   height: 500px;
+   width: 300px;
+   margin-bottom: 1%;
 }
 
 .houses{
@@ -41,15 +51,31 @@ body{
 }
 
 .modal-textbox {
-	background-color: white;
-	height: 360px;
-	width: 550px;
+	background-image:url("img/Iron_Throne.jpeg");
+   background-position: center;
+	height: 520px;
+	width: 450px;
 	border-radius: 2px;
 	margin: 150px auto;
    /*This will set the margins for the top and the bottom to 150px (or larger). The right and left will automatically set themselves (and keep the box centered horizontally).*/
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
    /*This will give the box some depth.*/
    /*box-shadow: x, y, blur, color*/
+}
+
+p{
+   color: white;
+   font-weight: 400;
+   text-align: center;
+   font-size: 16px;
+}
+
+.close{
+   background-color: black;
+   color: white;
+   position: relative;
+   top: 94%;
+   left: 43%;
 }
 
 .hide{
