@@ -27,6 +27,9 @@ $(() => {
       (data) => {
          $('.text').remove()
          //clears the modal
+         // console.log(data[0].members[0].name);
+         // const $p = $('<p>').addClass('text').text(data[0].members[0].name).appendTo('.modal-textbox')
+
          for (let info of data){
             console.log(info.name);
             const $p = $('<p>').addClass('text').text(info.name).appendTo('.modal-textbox')
@@ -36,8 +39,8 @@ $(() => {
 
          console.log(data);
          //logs an array of all the houses and all the members
-         console.log(data.name);
-         console.log(data[0].members);
+         // console.log(data.name);
+         // console.log(data[0].members);
          // access house with index 0 and the members in that house. Starks
       },
       () => {
