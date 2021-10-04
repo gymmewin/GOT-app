@@ -19,27 +19,12 @@ body{
    display: flex;
    justify-content: space-evenly;
    flex-wrap: wrap;
-
-}
-
-#Baratheon_Flag{
-   height:640px;
-   width: 414px;
-}
-
-#Targaryen_Flag{
-   height:640px;
-   width: 414px;
+   flex-direction: row;
 }
 
 #top{
    display: flex;
    align-content: center;
-}
-
-#Banner {
-   height: 100%;
-   width: 100%;
 }
 
 .modal {
