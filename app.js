@@ -53,8 +53,8 @@ $(() => {
       (data) => {
          for (let info of data){
             const $div = $('<div>').addClass('quotebox').appendTo('.quotes')
-            const $h3 = $('<h3>').text(info.sentence).appendTo($div)
-            const $h4 = $('<h4>').text(info.character.name).appendTo($div)
+            const $h3 = $('<h3>').text(`"${info.sentence}"`).appendTo($div)
+            const $h4 = $('<h4>').text(`-${info.character.name}`).appendTo($div)
             // console.log(info.sentence);
             // console.log(info.character.name);
          }
