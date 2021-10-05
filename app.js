@@ -44,6 +44,24 @@ $(() => {
             console.log("bad request");
       }
    })
+
+   $.ajax(
+      {
+         url: `https://game-of-thrones-quotes.herokuapp.com/v1/random`,
+      }
+   ).then(
+      (data) => {
+         const $h3 = $('<h3>').text(data.sentence).appendTo('.quotes')
+         const $h4 = $('<h4>').text(data.character.name).appendTo('.quotes')
+         console.log(data.sentence);
+         //logs the quote
+         console.log(data.character.name);
+         //logs who said the quote
+      }
+   ),
+   () => {
+      console.log("bad request");
+   }
 })
 
 

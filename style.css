@@ -15,9 +15,24 @@ body{
    width: 100%;
 }
 
+/**********GOT Banner**********/
+
+#top{
+   display: flex;
+   align-content: center;
+}
 #banner{
    width: 100vw;
 }
+
+/**********Quotes**********/
+h3, h4{
+   color: white;
+   font-family: cursive;
+   text-align: center;
+}
+
+/**********Sigils**********/
 
 input[type=image]{
    height: 500px;
@@ -32,10 +47,7 @@ input[type=image]{
    flex-direction: row;
 }
 
-#top{
-   display: flex;
-   align-content: center;
-}
+/**********MODAL**********/
 
 .modal {
 	background-color: rgba(0,0,0,0.4);
