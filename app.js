@@ -35,7 +35,7 @@ $(() => {
                const $p = $('<p>').addClass('text').text(info.members[i].name).appendTo('.modal-textbox')
             }
          }
-         console.log(data);
+         // console.log(data);
          //logs an array of all the houses and all the members
          // console.log(data[0]);
          // access house with index 0 and the members in that house. Starks
@@ -47,15 +47,36 @@ $(() => {
 
    $.ajax(
       {
-         url: `https://game-of-thrones-quotes.herokuapp.com/v1/random`,
+         url: `https://game-of-thrones-quotes.herokuapp.com/v1/random/10`,
       }
    ).then(
       (data) => {
-         const $h3 = $('<h3>').text(data.sentence).appendTo('.quotes')
-         const $h4 = $('<h4>').text(data.character.name).appendTo('.quotes')
-         console.log(data.sentence);
+         for (let info of data){
+            const $div = $('<div>').addClass('quotebox').appendTo('.quotes')
+            const $h3 = $('<h3>').text(info.sentence).appendTo($div)
+            const $h4 = $('<h4>').text(info.character.name).appendTo($div)
+            // console.log(info.sentence);
+            // console.log(info.character.name);
+         }
+         let currentQuoteIndex = 0
+
+         let currentQuote = $('.quotes').children().length-1
+
+         $('.button').on('click', () => {
+            $('.quotes').children().eq(currentQuoteIndex).css('display', 'none')
+
+            if (currentQuoteIndex < currentQuote){
+               currentQuoteIndex++
+               //incrementing to the next quote
+            } else{
+               currentQuoteIndex = 0
+            }
+            $('.quotes').children().eq(currentQuoteIndex).css('display', 'block')
+         })
+         // console.log(data);
+         // console.log(data.sentence);
          //logs the quote
-         console.log(data.character.name);
+         // console.log(data.character.name);
          //logs who said the quote
       }
    ),

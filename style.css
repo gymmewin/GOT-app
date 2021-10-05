@@ -32,6 +32,27 @@ h3, h4{
    text-align: center;
 }
 
+.middle {
+   display: flex;
+   flex-direction: column;
+}
+
+.button {
+   background-color: black;
+   color: white;
+   width: 140px;
+   align-self: center;
+   margin-bottom: 2%;
+}
+
+.quotes div:first-of-type{
+   display:block;
+}
+
+.quotebox{
+   display: none;
+}
+
 /**********Sigils**********/
 
 input[type=image]{
