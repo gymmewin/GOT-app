@@ -3,7 +3,7 @@ BEAKER Project 1
 
 Initially, I tried several Marvel APIs, both private and public, but I couldn't get the data calls to go through. After going through documentation and trying for several hours on Marvel, I tried switching to cocktails. I had a cool idea for a cocktail themed app that would display recipes but the API I found wanted payment to use it so I switched again. My API search ended when I finally found this easy to use API with a Game of Thrones theme.
 
-I decided to create a simple Game of Thrones themed app that allows you to click on the different house banners to show you house members using HTML, CSS, and Javascript. First, I set up my HTML boilerplate and made sure all my files were connected with the proper script and link tags. Afterwards, I made a rough wireframe sketch of what I wanted the website/app to look like. As I was sketching out the wireframe, I began to section out my HTML file by adding all my div tags and image tags.
+I decided to create a simple Game of Thrones themed app that allows you to click on the different house banners to show you house members using HTML, CSS, and Javascript. Within Javascript, I used JQuery to make AJAX calls to retrieve data from a GOT themed API. First, I set up my HTML boilerplate and made sure all my files were connected with the proper script and link tags. Afterwards, I made a rough wireframe sketch of what I wanted the website/app to look like. As I was sketching out the wireframe, I began to section out my HTML file by adding all my div tags and image tags.
 
 The first thing I did on my Javascript file was setting up the windows on load and testing the ajax calls. After I got the ajax call to return the data, I began to think about how I wanted the website to function. I knew that I wanted the website to populate a bunch of house sigil images and as you clicked on those sigils, it would pop up a modal with information on each family. With that being said, I knew the first thing I needed was the event listener for every time I clicked the sigil. I then made functions to open and close the modal.
 
@@ -13,4 +13,7 @@ My next step was to test my data that was being returned. I needed to figure out
 
 Some of my in between steps, when I would get stuck on a javascript issue, was to work on CSS. I slowly added to the styling of the website by fetching different banner images and sigil images from Google since the API didn't have any. I played around with the sizing and colors, spacing and margins.  
 
+I finished the project early and decided to add a second complex module in the form of a carousel. I have 10 random quotes that append to the carousel when the page loads and when you click the shuffle quote button, it goes to the next random quote. The trickiest part about making the carousel was knowing whether or not I could make a second ajax call or not. We haven't done that before, and luckily it was possible and I got it working with no trouble.
+
 Here is a link to my live site:
+https://gymmewin.netlify.app/

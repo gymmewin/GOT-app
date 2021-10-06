@@ -53,8 +53,10 @@ $(() => {
       (data) => {
          for (let info of data){
             const $div = $('<div>').addClass('quotebox').appendTo('.quotes')
+            //creates a div and sends it to quotes class in html
             const $h3 = $('<h3>').text(`"${info.sentence}"`).appendTo($div)
             const $h4 = $('<h4>').text(`-${info.character.name}`).appendTo($div)
+            //creates quotes and person who said quote and sends to new div
             // console.log(info.sentence);
             // console.log(info.character.name);
          }
@@ -73,11 +75,6 @@ $(() => {
             }
             $('.quotes').children().eq(currentQuoteIndex).css('display', 'block')
          })
-         // console.log(data);
-         // console.log(data.sentence);
-         //logs the quote
-         // console.log(data.character.name);
-         //logs who said the quote
       }
    ),
    () => {
