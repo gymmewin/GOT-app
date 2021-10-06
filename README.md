@@ -16,4 +16,4 @@ Some of my in between steps, when I would get stuck on a javascript issue, was t
 I finished the project early and decided to add a second complex module in the form of a carousel. I have 10 random quotes that append to the carousel when the page loads and when you click the shuffle quote button, it goes to the next random quote. The trickiest part about making the carousel was knowing whether or not I could make a second ajax call or not. We haven't done that before, and luckily it was possible and I got it working with no trouble.
 
 Here is a link to my live site:
-https://gymmewin.netlify.app/
+https://got-quotes-and-houses.netlify.app/
